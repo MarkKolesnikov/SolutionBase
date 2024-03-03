@@ -10,7 +10,7 @@ public class Solution17 {
         System.out.print("Input second binary number: ");
         int num2 = in.nextInt();
 
-        int sum = Integer.parseInt(String.valueOf(num1), 2) + Integer.parseInt(String.valueOf(num2), 2);
+        int sum = Integer.parseInt(String.valueOf(num1), 2) + Integer.parseInt(String.valueOf(num2), 2); // преобразовываем числа в строки интерпретируя их как двоичные числа.
         System.out.println("Сумма двоичных чисел: " + Integer.toBinaryString(sum));
     }
 }
