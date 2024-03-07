@@ -1,6 +1,5 @@
 package solution.octal;
 
-import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.Scanner;
 
 public class Solution21 {

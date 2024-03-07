@@ -1,5 +1,5 @@
 package solution.rectangle;
-import java.util.Scanner;
+
 public class Solution13 {
     public static void main(String[] args) {
         final double width = 5.6;
