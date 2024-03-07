@@ -1,29 +1,26 @@
 package solution.octal;
 
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.Scanner;
 
 public class Solution21 {
     public static void main(String[] args) {
-        int dec_num, rem, quot, i = 1, j;
-        int[] oct_num = new int[100];
+        Scanner sc = new Scanner(System.in);
 
-        Scanner scan = new Scanner(System.in);
+        long binaryNumber, decimalNumber = 0, j = 1;
+        long remainder;
 
-        System.out.println("Введите десятичное число: ");
-        dec_num = scan.nextInt();
 
-        quot = dec_num;
+        System.out.print("Введите двоиченое число: ");
+        binaryNumber = sc.nextLong();
 
-        while (quot != 0) {
-            oct_num[i++] = quot % 8;
-            quot = quot / 8;
+        while (binaryNumber != 0) {
+            remainder = binaryNumber % 10;
+            decimalNumber = decimalNumber + remainder * j;
+            j = j * 2;
+            binaryNumber = binaryNumber / 10;
         }
 
-        System.out.println("Восьмеричное число - это: " );
-        for (j = i - 1; j > 0; j--) {
-            System.out.println(oct_num[j]);
-        }
-
-        System.out.print("\n");
+        System.out.print("Десятичное число: " + decimalNumber);
     }
 }
