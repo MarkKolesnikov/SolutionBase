@@ -11,15 +11,9 @@ public class Exercise3 {
     }
 
     private static String middle(String str) {
-        int position;
-        int length;
-        if (str.length() % 2 == 0) {
-            position = str.length() / 2 - 1;
-            length = 2;
-        } else {
-            position = str.length() / 2;
-            length = 1;
-        }
-        return str.substring(position, position + length);
+        int length = str.length();
+        int position = (length % 2 == 0) ? (length / 2 - 1) : (length / 2);
+        int offset = (length % 2 == 0) ? 2 : 1;
+        return str.substring(position, position + offset);
     }
 }
