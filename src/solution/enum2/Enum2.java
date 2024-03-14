@@ -1,17 +1,25 @@
 package solution.enum2;
 
 public class Enum2 {
-    public enum Days_Of_Week {
+    // Enum для представления дней недели
+    public enum DayOfWeek {
         SUNDAY,
         MONDAY,
         TUESDAY,
         WEDNESDAY,
         THURSDAY,
         FRIDAY,
-        SATURDAY
+        SATURDAY;
+
+        // Переопределение метода toString для красивого вывода
+        @Override
+        public String toString() {
+            return name().charAt(0) + name().substring(1).toLowerCase();
+        }
     }
+
     public static void main(String[] args) {
-        Days_Of_Week today = Days_Of_Week.MONDAY;
+        DayOfWeek today = DayOfWeek.MONDAY;
         System.out.println("Today is " + today);
     }
 }
