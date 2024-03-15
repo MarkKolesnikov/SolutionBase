@@ -16,13 +16,13 @@ public class Exercise32 {
         input.close();
 
         if (Math.abs(num1 - num2) <= 0.01) {
-            System.out.println("These numbers are the same.");
+            System.out.println("These numbers are the same."); // 0.01
         } else {
-            System.out.println("These numbers are different.");
+            System.out.println("These numbers are different.");  // 0.01
         }
     }
 
     private static boolean numberAreSame(double number1, double number2) {
-        return  Math.abs(number1 - number2) <= TOLERANCE;
+        return  Math.abs(number1 - number2) <= TOLERANCE; // Тут мы сравниваем два числа с точностью до 0.01
     }
 }
