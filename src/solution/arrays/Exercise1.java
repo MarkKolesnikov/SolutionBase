@@ -13,7 +13,7 @@ public class Exercise1 {
         };
 
         // Declare and initialize a string array.
-        String[] my_array2 = {
+        String[] my_array2 = { // Initialize the string array.
                 "Java",
                 "Python",
                 "PHP",
