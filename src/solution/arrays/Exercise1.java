@@ -23,7 +23,7 @@ public class Exercise1 {
         };
 
         // Берем наш массив и печатаем его.
-        System.out.println("Original numeric array : " + Arrays.toString(my_array1));
+        System.out.println("Original numeric array : " + Arrays.toString(my_array1)); // Print the original numeric array.
 
         // Sort the numeric array in ascending order.
         Arrays.sort(my_array1);
