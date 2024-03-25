@@ -34,7 +34,7 @@ public class Exercise1 {
         // Print the original string array.
         System.out.println("Original string array : " + Arrays.toString(my_array2));
 
-        // Sort the string array in lexicographical (alphabetical) order.
+        // Cортируем строковый массив в алфавитном порядке.
         Arrays.sort(my_array2);
 
         // Print the sorted string array.
