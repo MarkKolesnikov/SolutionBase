@@ -13,6 +13,6 @@ public class Solution15 {
         a = b;
         b = temp;
 
-        System.out.println("After swapping : a, b = " + a + ", " + b);
+        System.out.println("After swapping : a, b = " + a + ", " + b); // 15, 10
     }
 }
