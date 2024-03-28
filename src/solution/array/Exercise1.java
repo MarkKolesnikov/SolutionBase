@@ -31,7 +31,7 @@ public class Exercise1 {
         System.out.println("Sorted numeric array : " + Arrays.toString(my_array1));
 
         // Print the original string array.
-        System.out.println("Original string array : " + Arrays.toString(my_array2));
+        System.out.println("Original string array : " + Arrays.toString(my_array2)); // 0 1 2 3 4 5
 
         // Sort the string array in lexicographical (alphabetical) order.
         Arrays.sort(my_array2);
